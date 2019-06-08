@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>22</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.mayitxt.com/</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>utf-8</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.mayitxt.com/shuku/lastupdate_0_0_0_0_0_0_0.html</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelListFilter>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </NovelListFilter>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;td&gt;&lt;a class="red" href="http://www.mayitxt.com/book/(\d*).html" title="(.+?)"</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>http://www.mayitxt.com/book/{NovelKey}.html</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>未找到该编号的书籍信息</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;h1&gt;(.+?)&lt;/h1&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;span class="author"&gt;(.+?)&lt;/span&gt;&lt;/i&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;meta name="description" content=".+?最新力作的一部(.+?),</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;meta name="description" content=".+?最新力作的一部(.+?),</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;/p&gt;♂
+&amp;#12288;♂</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>&lt;p class="brief breviary" &gt;(.+?)&lt;a class="more" id="bookMore"&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;h3&gt;【.+?】简介(.+?)：</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;img src="(.+?)"</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>http://www.mayitxt.com/showclist/{NovelKey}.html</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>本行不能为空</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div class="bd"&gt;</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="http://www.mayitxt.com/chapter/\d*/\d*.html" class="name"&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="http://www.mayitxt.com/chapter/\d*/(\d*).html" class="name"&gt;.+?&lt;/a&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>http://www.mayitxt.com/chapter/{NovelKey}/{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>ㄧ|１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ|З|з♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+б|６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+⑩|⑽|⒑♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１０|⑩|㈩|⑽|⒑♂10
+０♂0
+．♂.
+Q|ｑ|Ｑ♂q
+W|ｗ|Ｗ♂w
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+１０|⑩|㈩|⑽|⒑|Ⅹ|ⅹ♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１|①|⑴|⒈|㈠♂1
+２|②|⑵|⒉|㈡♂2
+３|③|⑶|⒊|З|з|㈢♂3
+４|④|⑷|⒋|㈣♂4
+５|⑤|⑸|⒌|㈤♂5
+６|⑥|⑹|⒍|б|㈥♂6
+７|⑦|⑺|⒎|㈦♂7
+８|⑧|⑻|⒏|㈧♂8
+９|⑨|⑼|⒐|㈨♂9
+０♂0
+⑩|⑽|⒑♂10
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+蚂蚁阅读网♂
+www.mayitxt.com♂
+mayitxt♂
+&lt;br /&gt;♂
+一秒记住♂
+&amp;nbsp;，更新快，，免费读！♂
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;免费小说，无弹窗小说网，txt下载，请记住&amp;nbsp;♂</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>&lt;div class="page-content " id="ChapterContents"&gt;(.+?)&lt;/div&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentPageUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPageUrl</RegexName>
+  </PubContentPageUrl>
+  <PubContentPageKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPageKey</RegexName>
+  </PubContentPageKey>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>请记住本书首发域名：。♂
+请记住本书首发域名♂
+手机版阅读网址：♂
+手机版阅读网址♂</Pattern>
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentChapterName</RegexName>
+  </PubContentChapterName>
+  <PubContentChapterNum>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentChapterNum</RegexName>
+  </PubContentChapterNum>
+</RuleConfigInfo>

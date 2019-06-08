@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<ReplaceConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Md5Chapter>false</Md5Chapter>
+  <ReplaceChapterNameOn>false</ReplaceChapterNameOn>
+  <ErrorNum>1</ErrorNum>
+  <EmptyChapter>0</EmptyChapter>
+  <OrderChapter>2</OrderChapter>
+  <RepeatChapterHandle>1</RepeatChapterHandle>
+  <AddTime>false</AddTime>
+  <ChapterNum>50</ChapterNum>
+  <ChapterUrlWait>0</ChapterUrlWait>
+  <ClearRectMark>false</ClearRectMark>
+  <GoRepeatChapter>1</GoRepeatChapter>
+  <FilterNovel>
+    <string />
+  </FilterNovel>
+  <FilterNovelType>0</FilterNovelType>
+  <FilterVolume>
+    <string />
+  </FilterVolume>
+  <FindMaxChapterNum>1000</FindMaxChapterNum>
+  <Finish>false</Finish>
+  <ID>749FA410-0606-4737-BAA3-DA970793FB78</ID>
+  <IndexUrlWait>0</IndexUrlWait>
+  <Interval>10</Interval>
+  <Log>true</Log>
+  <MaxAddTime>2019-04-01T23:21:04</MaxAddTime>
+  <MinAddTime>2013-06-28T16:35:04</MinAddTime>
+  <MinChapterNum>10</MinChapterNum>
+  <NameAndAuthor>true</NameAndAuthor>
+  <NoPBar>false</NoPBar>
+  <NovelUrlWait>0</NovelUrlWait>
+  <Proxy>false</Proxy>
+  <ProxyHost>123.119.67.47</ProxyHost>
+  <ProxyPort>9999</ProxyPort>
+  <ReMoteChapterNum>100</ReMoteChapterNum>
+  <Timing>true</Timing>
+  <UpdateChapterName>true</UpdateChapterName>
+  <CheckRepeat>true</CheckRepeat>
+  <DelForTxt>true</DelForTxt>
+  <FilterFinish>true</FilterFinish>
+  <NewBook>true</NewBook>
+  <Hidebook>false</Hidebook>
+  <CheckVolume>false</CheckVolume>
+  <ProhibitionVolume>false</ProhibitionVolume>
+  <DelForTxtHtml>true</DelForTxtHtml>
+</ReplaceConfigInfo>

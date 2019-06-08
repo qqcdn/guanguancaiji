@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>mkxs8</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>https://www.mkxs8.com/</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>https://www.mkxs8.com/</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="https://www.mkxs8.com/book/(\d*).shtml" target="_blank" title=".+?" style='.+?'&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.mkxs.com/book/{NovelKey}.shtml</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;h1&gt;&lt;a href=".+?"&gt;(.+?)&lt;/a&gt;&lt;/h1&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>对不起，该文章不存在</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>作者：(.+?)&lt;/li&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Other</Method>
+    <Options>None</Options>
+    <Pattern>类型：(.+?)&lt;/li&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Other</Method>
+    <Options>None</Options>
+    <Pattern>类型：(.+?)&lt;/li&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>书籍简介&lt;/strong&gt;((.|\n)+?)&lt;a href</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>状态：&lt;em class="gray"&gt;(.+?)&lt;/em&gt;</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;img src="(.+?)" width="120"</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>/Images/NoImg.gif</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="(.+?)" title=".+?"&gt;全文阅读&lt;/a&gt;</Pattern>
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>{NovelPubKey}</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Spilt</Method>
+    <Options>None</Options>
+    <Pattern>&lt;li&gt;</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;li&gt;(.+?)&lt;/li&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a rel="nofollow" href="\d*.html"&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a rel="nofollow" href="(\d*).html"&gt;.+?&lt;/a&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubContent_GetTextKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContent_GetTextKey</RegexName>
+  </PubContent_GetTextKey>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>。\s*.+?泊星
+&lt;br /&gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;.+?本章完.+?\s*.+?泊星
+石书院.+?\s*&lt;/div&gt;
+.+?泊星</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div id="text_area"&gt;((.|\n)+?)&lt;div id="ans"&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentChapterName>
+  <PubContentImages>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;[^&lt;]*((?&lt;=&lt;(?:img|IMG)[^&gt;]*(?:(?:src|SRC)(?:\s*=\s*(?:["']?))))(?:[^\s"'&gt;]*)\.(?:jpg|gif|jpeg|bmp|png|GIF|JPG))[^&gt;]*&gt;</Pattern>
+    <RegexName>PubContentImages</RegexName>
+  </PubContentImages>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentPageArea>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPageArea>
+  <PubContentPage>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPage>
+</RuleConfigInfo>

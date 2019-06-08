@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>81</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.x81zw.com/</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Other</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="/"&gt;新八一中文网&lt;/a&gt; &amp;gt; &lt;a href=".+?"&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>者：(.+?)&lt;/p&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;img alt=".+?" src="(.+?)" width="120" height="150" /&gt;</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>/Images/NoImg.gif</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>态：(.+?)&lt;/p&gt;</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>对不起，该文章不存在</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <NovelIntro>
+    <FilterPattern>【
+地址.+?】
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;br&gt;
+&lt;/br&gt;
+http://(.|\n)+?/</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="intro"&gt;((.|\n)*)&lt;div id="sidebar"&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;h1&gt;(.+?)&lt;/h1&gt;</Pattern>
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;span class="s2"&gt;&lt;a href="/book/.+?/(.+?)/" target="_blank"&gt;(.+?)&lt;/a&gt;&lt;/span&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.x81zw.com/</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;h1&gt;(.+?)&lt;/h1&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.x81zw.com/book/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="/book/\d*/\d*/(\d*).html"&gt;.+?&lt;/a&gt;&lt;/dd&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="/book/\d*/\d*/\d*.html"&gt;(.+?)&lt;/a&gt;&lt;/dd&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubContent_GetTextKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContent_GetTextKey</RegexName>
+  </PubContent_GetTextKey>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubContentImages>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;[^&lt;]*((?&lt;=&lt;(?:img|IMG)[^&gt;]*(?:(?:src|SRC)(?:\s*=\s*(?:["']?))))(?:[^\s"'&gt;]*)\.(?:jpg|gif|jpeg|bmp|png|GIF|JPG))[^&gt;]*&gt;</Pattern>
+    <RegexName>PubContentImages</RegexName>
+  </PubContentImages>
+  <PubContentPage>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPage</RegexName>
+  </PubContentPage>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentText>
+    <FilterPattern>1&amp;gt;
+&amp;amp;♂&amp;
+biquge;♂
+&amp;#38;♂&amp;
+&amp;lt;♂&lt;
+&amp;#60;♂&lt;
+&amp;gt;♂&gt;
+&amp;#62;♂&gt;
+&amp;quot;♂”
+quot;♂“
+&amp;times;♂×
+&amp;divide;♂÷
+&amp;tilde;♂˜
+&amp;lsquo;♂‘
+&amp;#8216;♂‘
+&amp;rsquo;♂’
+&amp;#8217;♂’
+&amp;sbquo;♂,
+&amp;#8218;♂‚
+&amp;ldquo;♂“
+&amp;#8220;♂“
+&amp;rdquo;♂”
+&amp;#8222;♂”
+&amp;bdquo;♂„
+&amp;lsaquo;♂‹
+&amp;rsaquo;♂›
+&amp;mdash;♂--
+&amp;#8226;♂·
+&amp;middot;♂·
+&amp;#149;♂·
+&amp;#65533;♂□
+&amp;#9828;♂=
+&amp;#183;♂；
+&amp;hellip;♂…
+&amp;#8230;♂…
+&amp;acute;♂´
+&amp;permil;♂‰
+&amp;larr;♂←
+&amp;uarr;♂↑
+&amp;rarr;♂→
+&amp;darr;♂↓
+&amp;radic;♂√
+&amp;asymp;♂≈
+&amp;yen;♂¥
+&amp;ne;♂≠
+&amp;equiv;♂≡
+&amp;le;♂≤
+&amp;ge;♂≥
+&amp;plusmn;♂±
+“;♂“
+&lt;/p&gt;♂&lt;/br&gt;
+&lt;p&gt;♂&lt;br&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>&lt;div id="content"&gt;((.|\n)+?)&lt;/div&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentTitle>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentTitle</RegexName>
+  </PubContentTitle>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.x81zw.com/book/{NovelKey/1000}/{NovelKey}/{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.x81zw.com/book/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="list"&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Spilt</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="list"&gt;</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>20170227 By 大坤　欢迎交换连接　www.98shuwu.com www.biquwu.cn QQ:643215</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>20170227 By 大坤　欢迎交换连接　www.98shuwu.com www.biquwu.cn QQ:643215</Pattern>
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Other</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="/"&gt;新八一中文网&lt;/a&gt; &amp;gt; &lt;a href=".+?"&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <TsContrary>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>TsContrary</RegexName>
+  </TsContrary>
+</RuleConfigInfo>

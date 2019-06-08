@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>veki</Pattern>
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>999</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>630book.la</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>https://www.630book.la/</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Matches</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>https://www.630book.la</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelListFilter>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelListFilter</RegexName>
+  </NovelListFilter>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Matches</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>&gt;&lt;div class="zp"&gt;&lt;a class="name" href="/shu/(\d*).html" title=".+?"&gt;(.+?)&lt;/a&gt;&lt;/div&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Matches</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>https://www.630book.la/shu/{NovelKey}.html</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>未找到该编号的书籍信息</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>og:title" content="(.+?)"/&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern>&lt;td[^&gt;]*&gt;
+&lt;a[^&gt;]*&gt;
+：
+michanll
+&amp;.+?;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>og:novel:author" content="(.+?)"/&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>og:novel:category" content="(.+?)"/&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern>&lt;td[^&gt;]*&gt;
+&lt;a[^&gt;]*&gt;
+&lt;/a&gt;
+：</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>novel:category" content="(.+?)"/&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;/p&gt;
+&lt;SCRIPT.+?&gt;
+&lt;/SCRIPT&gt;
+&lt;div.+?&gt;
+&lt;span.+?&gt;
+&lt;/span&gt;
+&lt;a.+?&lt;/a&gt;
+&lt;font.+?&lt;/font&gt;
+&lt;script.+?&gt;
+&lt;strong&gt;
+书籍简介
+&lt;/strong&gt;
+&lt;/span&gt;
+&lt;script&gt;
+&lt;/script&gt;
+：
+&lt;font.+?&gt;.+?&lt;/font&gt;
+&amp;.+?;
+&lt;a[^&gt;]*&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+http://
+http:
+//
+TXT全集下载
+顶点小说网
+顶点小说
+顶.+?点.+?小.+?说
+乐文小说
+wxs520
+起点小说网
+起点
+小说网
+起点小说网
+笔趣阁
+笔趣
+趣阁
+笔.+?趣.+?阁
+請移步到筆趣閣閱讀章節
+筆趣閣
+筆
+閣
+520
+txt下载免费全集下载
+txt
+是分享全本小说的开放平台，
+是分享全本小说的开放平台
+书&amp;nbsp;本&amp;nbsp;网
+书本网
+书本
+本网
+www.bookben.com
+m.bookben.com
+bookben
+www
+konlan
+com
+ww
+co
+om
+w.+?w.+?w
+c.+?o.+?m
+net
+cn
+m.
+wap
+a;
+hellip;
+手机站：
+电脑站：
+手机访问
+org
+&lt;/b&gt;
+ lt;
+/brgt;
+\/brgt;
+</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div id="intro"&gt;((.|\n)+?)&lt;/div&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>property="og:novel:status" content="(.+?)"/&gt;</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Matches</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>og:image" content="(.+?)"/&gt;</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Url</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Matches</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>https://www.630book.la/shu/{NovelKey}.html</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dt</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>class="ttname"&gt;&lt;h2&gt;(.+?)&lt;/h2&gt;&lt;/dt&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="/shu/\d*/\d*.html"&gt;(.+?)&lt;/a&gt;&lt;/dd&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern>'</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="/shu/\d*/(\d*).html"&gt;.+?&lt;/a&gt;&lt;/dd&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>https://www.630book.la/shu/{NovelKey}/{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>打击盗版，支持正版，请到逐浪网.zhulang.阅读最新内容。
+打击盗版，支持正版.+?阅读最新内容。
+笔趣阁 www.xs.la 
+一秒★小△说§网..Org】，精彩小说无弹窗免费阅读！
+一秒.+精彩小说无弹窗免费阅读！
+一秒★小△说§网..Org】，精彩小说无弹窗免费阅读！
+一秒.+无弹窗免费阅读！
+当前用户id:,当前用户名:
+&lt;div&gt;
+&lt;p.+?&gt;
+&lt;/p&gt;
+&lt;script&gt;nl02();&lt;/script&gt;
+&lt;/div&gt;
+&lt;script.+?&lt;/script&gt;
+1&amp;gt;
+&amp;amp;♂&amp;
+&amp;#38;♂&amp;
+&amp;lt;♂&lt;
+&amp;#60;♂&lt;
+&amp;gt;♂&gt;
+&amp;#62;♂&gt;
+&amp;quot;♂”
+quot;♂“
+&amp;times;♂×
+&amp;divide;♂÷
+&amp;tilde;♂˜
+&amp;lsquo;♂‘
+&amp;#8216;♂‘
+&amp;rsquo;♂’
+&amp;#8217;♂’
+&amp;sbquo;♂,
+&amp;#8218;♂‚
+&amp;ldquo;♂“
+&amp;#8220;♂“
+&amp;rdquo;♂”
+&amp;#8222;♂”
+&amp;bdquo;♂„
+&amp;lsaquo;♂‹
+&amp;rsaquo;♂›
+&amp;mdash;♂--
+&amp;#8226;♂·
+&amp;middot;♂·
+&amp;#149;♂·
+&amp;#65533;♂□
+&amp;#9828;♂=
+&amp;#183;♂；
+&amp;hellip;♂…
+&amp;#8230;♂…
+&amp;acute;♂´
+&amp;permil;♂‰
+&amp;larr;♂←
+&amp;uarr;♂↑
+&amp;rarr;♂→
+&amp;darr;♂↓
+&amp;radic;♂√
+&amp;asymp;♂≈
+&amp;yen;♂¥
+&amp;ne;♂≠
+&amp;equiv;♂≡
+&amp;le;♂≤
+&amp;ge;♂≥
+&amp;plusmn;♂±
+&lt;div.+?&gt;
+&lt;/div&gt;
+&lt;a.+?&gt;
+&lt;/a&gt;
+&lt;strong[^&gt;]*&gt;|&lt;/strong&gt;
+&amp;\d*;
+&amp;#\d*;
+#&amp;\d*;
+&lt;span[^&gt;]*&gt;|&lt;/span&gt;
+&lt;[Aa].+?&lt;/[Aa]&gt;
+&lt;!--.+?--&gt;
+&lt;p style[^&gt;]*&gt;
+&lt;[Dd][Ii][Vv].+?&gt;
+&lt;font[^&gt;]*&gt;|&lt;/font&gt;
+&lt;/center&gt;
+&lt;a[^&gt;]*&gt;
+&lt;label[^&gt;]*&gt;
+&lt;/label&gt;
+&lt;FONT.+?&lt;/FONT&gt;
+&lt;font.+?&lt;/font&gt;
+更多到，地址
+ㄧ|１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ|З|з♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+б|６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+Q|ｑ|Ｑ♂q
+W|ｗ|Ｗ|ω|Ш♂w
+E|ｅ|Ｅ|Ё|ё|Е|ε|е|Ε♂e
+R|ｒ|Ｒ|Я|я♂r
+T|ｔ|Ｔ|Т|т|Τ|τ|ㄒ♂t
+Y|ｙ|Ｙ|У|у♂y
+U|ｕ|Ｕ|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ♂u
+I|ｉ|Ｉ|ì|í|ī|ǐ|∣|Ι|ι♂i
+O|ｏ|Ｏ|ò|ó|ō|ǒ|О|о|ο|Ο♂o
+P|ｐ|Ｐ|Ρ|Р|р|ρ♂p
+A|ａ|Ａ|а|α♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ|℉♂f
+G|ｇ|Ｇ|ɡ♂g
+H|ｈ|Ｈ|Н|н|Η♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ|К|к|κ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ|Ζ♂z
+X|ｘ|Ｘ|×|Х|х|Χ|χ|Ⅹ|ⅹ♂x
+C|ｃ|Ｃ|С|℃|С|с♂c
+V|ｖ|Ｖ|∨|ˇ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ||ń|ň|∏|∩|И|и|Й|й|Ν♂n
+M|ｍ|Ｍ||М|м|Μ♂m
+１０|⑩|㈩|⑽|⒑♂10
+０♂0
+．♂.
+&lt;font.+?&lt;/font&gt;
+&lt;a.+?&lt;/a&gt;
+笔趣阁
+请记住本书首发域名：
+。手机版阅读网址：
+www.qu.la
+www.qu.la
+笔趣阁
+www.zbjxs.com
+猪八戒小说网
+本書首发于看書辋
+看書辋
+www.gtsss.com
+听风小说网
+http://
+http:
+//
+&lt;[Ss][Cc][Rr][Ii][Pp][Tt](.|\n)+?&lt;/[Ss][Cc][Rr][Ii][Pp][Tt]&gt;|&lt;[Ff][Oo][Nn][Tt](.|\n)*?&lt;/[Ff][Oo][Nn][Tt]&gt;|&lt;[Ii][Ff][Rr][Aa][Mm][Ee](.|\n)+?&lt;/[Ii][Ff][Rr][Aa][Mm][Ee]&gt;|&lt;[Aa].+?
+&lt;/[Aa]&gt;|&lt;[Dd][Ii][Vv].+?&gt;|&lt;/[Dd][Ii][Vv]&gt;|&lt;!--.+?--&gt;|&lt;[Ss&gt;][Pp][Aa][Nn](.|\n)*?&lt;/[Ss&gt;][Pp][Aa][Nn]&gt;|创世中文网|首发，最新最火最快网络小说首发地！（本站提供：传统翻页、瀑布阅读两
+种模式，可在设置中选择）|rn|&lt;p style[^&gt;]*&gt;|最新章节由
+想听到更多你们的声音
+想收到更多你们的建议
+现在就搜索微信公众号
+qdread
+并加关注
+本书首发来自17k
+第一时间看正版内容
+超多好看小说
+无弹窗广告
+无弹窗
+无广告
+百度搜索
+txt电子书下载
+电子书下载
+起点中文网
+wap.23us.com
+www.23wx.com
+wap.23wx.com
+m.23wx.com
+m.23us.com
+小说无广告的
+老宾文学网
+好看的小说
+顶点小说网
+顶点小说
+顶.+?点.+?小.+?说
+乐文小说
+wxs520
+起点小说网
+起点
+小说网
+起点小说网
+笔趣阁
+笔趣
+趣阁
+笔.+?趣.+?阁
+請移步到筆趣閣閱讀章節
+筆趣閣
+txt下载免费全集下载
+是分享全本小说的开放平台，
+是分享全本小说的开放平台
+书&amp;nbsp;本&amp;nbsp;网
+书本网
+书本
+本网
+www.bookben.com
+m.bookben.com
+hellip;
+电脑站：
+手机访问
+书包网
+www.bookbao.com
+www.fenghuaju.com
+风华居
+www.qu.la
+看清爽的小说就到【顶点小说网 www.23wx.io】
+看清爽的小说.+?23wx.io】
+恋上你看书网 WWW.630BOOK.LA ，最快更新绝版蜜恋：竹马校草，拐回家！最新章节！
+恋上你看书网.+?最新章节！
+看深夜福利电影，请关注微信公众号：ok电影天堂
+www.630book.la
+m.630book.la
+www.xs.la
+www.+?com
+www.+?cn
+www.+?net
+www.+?org
+ww.+?la
+ww.+?cc
+ww.+?co
+ww.+?biz
+ww.+?info
+ww.+?in
+</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="content"&gt;((.|\n)+?)&lt;/div&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentPageUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPageUrl</RegexName>
+  </PubContentPageUrl>
+  <PubContentPageKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPageKey</RegexName>
+  </PubContentPageKey>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern />
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentChapterName</RegexName>
+  </PubContentChapterName>
+  <PubContentChapterNum>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentChapterNum</RegexName>
+  </PubContentChapterNum>
+</RuleConfigInfo>

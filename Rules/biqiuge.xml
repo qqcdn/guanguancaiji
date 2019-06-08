@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>关关规则</Pattern>
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>22</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>笔趣阁</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>utf-8</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>https://www.xxbiquge.com/</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>https://www.xxbiquge.com/</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelListFilter>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </NovelListFilter>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;span class="s2"&gt;&lt;a href="/\d*_(\d*)/" target="_blank"&gt;(.+?)&lt;/a&gt;&lt;/span&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>https://www.xxbiquge.com/{NovelKey/1000}_{NovelKey}/</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>未找到该编号的书籍信息</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern>&lt;h1&gt;(.+?)&lt;/h1&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;p&gt;作&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;者：(.+?)&lt;/p&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="/"&gt;新笔趣阁&lt;/a&gt; &amp;gt; &lt;a href=".+?"&gt;(.+?)&lt;/a&gt; &amp;gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="/"&gt;新笔趣阁&lt;/a&gt; &amp;gt; &lt;a href=".+?"&gt;(.+?)&lt;/a&gt; &amp;gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;p&gt;|&lt;/p&gt;|&lt;/div&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="intro"&gt;((.|\n)+?)&lt;/div&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>Singleline</Options>
+    <Pattern>&lt;div id="fmimg"&gt;&lt;img alt=".+?" src="(.+?)" width="120" height="150"</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>https://www.xxbiquge.com/{NovelKey/1000}_{NovelKey}/</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dt</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&gt;《.+?》(.+?)&lt;/dt&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="/\d*_\d*/\d*.html"&gt;(.+?)&lt;/a&gt;&lt;/dd&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="/\d*_\d*/(\d*).html"&gt;.+?&lt;/a&gt;&lt;/dd&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>1&amp;gt;
+&amp;amp;♂&amp;
+www;♂
+biquge;♂
+com;♂
+&amp;#38;♂&amp;
+&amp;lt;♂&lt;
+&amp;#60;♂&lt;
+&amp;gt;♂&gt;
+&amp;#62;♂&gt;
+&amp;quot;♂”
+quot;♂“
+&amp;times;♂×
+&amp;divide;♂÷
+&amp;tilde;♂˜
+&amp;lsquo;♂‘
+&amp;#8216;♂‘
+&amp;rsquo;♂’
+&amp;#8217;♂’
+&amp;sbquo;♂,
+&amp;#8218;♂‚
+&amp;ldquo;♂“
+&amp;#8220;♂“
+&amp;rdquo;♂”
+&amp;#8222;♂”
+&amp;bdquo;♂„
+&amp;lsaquo;♂‹
+&amp;rsaquo;♂›
+&amp;mdash;♂--
+&amp;#8226;♂·
+&amp;middot;♂·
+&amp;#149;♂·
+&amp;#65533;♂□
+&amp;#9828;♂=
+&amp;#183;♂；
+&amp;hellip;♂…
+&amp;#8230;♂…
+&amp;acute;♂´
+&amp;permil;♂‰
+&amp;larr;♂←
+&amp;uarr;♂↑
+&amp;rarr;♂→
+&amp;darr;♂↓
+&amp;radic;♂√
+&amp;asymp;♂≈
+&amp;yen;♂¥
+&amp;ne;♂≠
+&amp;equiv;♂≡
+&amp;le;♂≤
+&amp;ge;♂≥
+&amp;plusmn;♂±
+
+“;♂“
+&lt;/p&gt;♂&lt;/br&gt;
+&lt;p&gt;♂&lt;br&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div id="content"&gt;((.|\n)+?)&lt;/div&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentPageUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPageUrl>
+  <PubContentPageKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPageKey>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无弹窗
+百度一下</Pattern>
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentChapterName>
+  <PubContentChapterNum>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentChapterNum>
+</RuleConfigInfo>

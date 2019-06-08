@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>22</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.k6uk.com/</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.k6uk.com</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.k6uk.com/modules/article/toplist.php?sort=postdate</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelListFilter>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </NovelListFilter>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="http://www.k6uk.com/novelinfo/\d*/(\d*).html" target="_blank" class="STYLE8"&gt;(.+?)&lt;/a&gt;&lt;/td&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.k6uk.com/novelinfo/{NovelKey/1000}/{NovelKey}.html</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>当前小说页不存在</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;h1 class="STYLE12"&gt;&lt;span style="font-weight: bold; line-height: 150%"&gt;(.+?)&lt;/span&gt;&lt;/h1&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;td width="33%"&gt;作&amp;nbsp;&amp;nbsp;&amp;nbsp; 者：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;td width="33%"&gt;类&amp;nbsp;&amp;nbsp;&amp;nbsp; 别：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;td width="33%"&gt;类&amp;nbsp;&amp;nbsp;&amp;nbsp; 别：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;a href="javascript:void(0)" onclick="moredesc(2);"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;script src=/ad/000.js&gt;&lt;/script&gt;&lt;/li&gt;
+神马小说网
+&lt;/span&gt;
+    &lt;span class="STYLE6"&gt;
+最新章节地址:
+http://www.shenmaxiaoshuo.com/
+xx-.+?/
+&lt;strong&gt;.+?&lt;/strong&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;span class="STYLE6"&gt;&lt;br /&gt;((.|\n)+?)&lt;span class="hottext"&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;img src="(.+?)" border="0" width="100" height="125" align="right" hspace="5" vspace="5" alt=".+?" /&gt;&lt;/a&gt;</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.k6uk.com/novel/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>当前小说页不存在</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="list"&gt;</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;a href="\d*.html" title=".+? 更新时间:"&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="(\d*).html" title=".+? 更新时间:"&gt;.+?&lt;/a&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>http://www.k6uk.com/novel/{NovelKey/1000}/{NovelKey}/{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase Singleline</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>document.write
+&lt;h3&gt;.+?&lt;/h3&gt;
+href
+&lt;div.+?div&gt;
+&amp;nbsp;
+/
+[  &lt;a " href=""&gt; ]&lt;div&gt;
+target="_blank
+xxxxx
+&lt;script.+?script&gt;
+&lt;div id=.+?&gt;&lt;/div&gt;
+( http://www.xxxxx.com xxxxx ) &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;script src="/zi/shien.js"&gt;&lt;/script&gt;
+【.+?】
+&lt;a href=http://www.xxxxx.com&gt;
+xxxxx
+更多.+?om
+&lt;/div&gt;&lt;div class="ad250left"&gt;
+&lt;script src="/js/336x280.js"&gt;
+&lt;/script&gt;&lt;/div&gt;
+&lt;a&gt;
+&lt;/a&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;/div&gt;&lt;div id="content"&gt;((.|\n)*)&lt;div id="footlink"&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentPageUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPageUrl>
+  <PubContentPageKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPageKey>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>[MｍＭМm].{0,22}[nNｎＮлńň].{0,4}[eEｅЕЁёêēéěè].{0,4}[tTｔＴ]
+[MｍＭМm].{0,22}[CｃＣ℃Ссc].{0,4}[Oｏ０ОΟо○0Ｏoōóǒò].{0,4}[MｍＭМm]
+[MｍＭМm].{0,22}[CｃＣ℃Ссc].{0,4}[CｃＣ℃Ссc]
+[MｍＭМm].{0,22}[CｃＣ℃Ссc].{0,4}[nNｎＮлńň]
+[WｗＷwω].{0,4}[WｗＷωw].{0,4}[WｗＷωw].{0,22}[nNｎＮлńň].{0,4}[eEｅЕЁёêēéěè].{0,4}[tTｔＴ]
+[WｗＷwω].{0,4}[WｗＷωw].{0,4}[WｗＷωw].{0,22}[CｃＣ℃Ссc].{0,4}[Oｏ０ОΟо○0Ｏoōóǒò].{0,4}[MｍＭМm]
+[WｗＷwω].{0,4}[WｗＷωw].{0,4}[WｗＷωw].{0,22}[CｃＣ℃Ссc].{0,4}[CｃＣ℃Ссc]
+[WｗＷwω].{0,4}[WｗＷωw].{0,4}[WｗＷωw].{0,22}[CｃＣ℃Ссc].{0,4}[nNｎＮлńň]
+[nNｎＮлńň][eEｅЕЁёêēéěè][tTｔＴ]
+[CｃＣ℃Ссc][nNｎＮлńň]
+[CｃＣ℃Ссc][Oｏ０ОΟо○0Ｏoōóǒò][MｍＭМm]
+[CｃＣ℃Ссc][CｃＣ℃Ссc]
+[WｗＷwω][WｗＷωw][WｗＷωw]
+[WｗＷwω][AａＡaаαāáǎà][PｐＰрp]
+[HｈＨh][TｔＴt][TｔＴt][PｐＰрp][：:]
+【５１文学网】发布，更多章节请到
+如果您喜欢这部作品，欢迎您来起点（qidian.）投推荐票、月票，您的支持，就是我最大的动力。手机用户请到阅读。</Pattern>
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentChapterName>
+  <PubContentChapterNum>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentChapterNum>
+</RuleConfigInfo>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<HtmlConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Timing>true</Timing>
+  <Interval>1</Interval>
+  <PageMax>10</PageMax>
+  <PageTime>500</PageTime>
+  <ID />
+  <IndexUrl>http://localhost/index.php</IndexUrl>
+  <IndexPath>{WebSitePath}\index.html</IndexPath>
+  <PageUrl />
+  <PagePath />
+  <RadioBy>Index</RadioBy>
+  <IndexReplace />
+  <PageReplace />
+</HtmlConfigInfo>

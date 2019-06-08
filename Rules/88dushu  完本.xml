@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>2</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>88读书</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.88dushu.com/</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.23us.com/modules/article/search.php</Pattern>
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>SearchKey={SearchKey}&amp;SearchClass=1</Pattern>
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="/Book/(.\d*)/Index.aspx"&gt;&lt;font color="#006699"&gt;(.+?)&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;</Pattern>
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.88dushu.com/top/fullflag/1/</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelListFilter>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelListFilter</RegexName>
+  </NovelListFilter>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;span class="sm"&gt;&lt;a href="/xiaoshuo/\d*/(\d*)/"&gt;&lt;b&gt;(.+?)&lt;/b&gt;&lt;/a&gt;&lt;/span&gt;&lt;span class="zj"&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.88dushu.com/xiaoshuo/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>对不起，该文章不存在</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>og:novel:book_name" content="(.+?)"&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>og:novel:author" content="(.+?)"&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>og:novel:category" content="(.+?)"&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;/p&gt;
+&lt;table.+?&gt;
+&lt;/table&gt;
+&lt;tr&gt;
+&lt;/tr&gt;
+&lt;script&gt;.+?&lt;/script&gt;
+&lt;td.+?&gt;
+&amp;amp;
+lt;
+div
+id=
+&amp;amp;
+quot;
+&lt;/td&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>og:description" content="((.|\n)+?)\s*"&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>og:novel:status" content="(.+?)"&gt;</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>og:image" content="(.+?)"&gt;</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.88dushu.com/xiaoshuo/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Spilt</Method>
+    <Options>None</Options>
+    <Pattern>&lt;th colspan="</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>4"&gt;(.+?)&lt;/td&gt;&lt;/tr&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;li&gt;&lt;a href="\d*.html"&gt;(.+?)&lt;/a&gt;&lt;/li&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;li&gt;&lt;a href="(\d*).html"&gt;.+?&lt;/a&gt;&lt;/li&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>顶点小说 ２３ＵＳ．ＣＯＭ更新最快
+顶点小说.+?更新最快
+Q|ｑ|Ｑ♂q
+W|ｗ|Ｗ♂w
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+１０|⑩|㈩|⑽|⒑|Ⅹ|ⅹ♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１|①|⑴|⒈|㈠♂1
+２|②|⑵|⒉|㈡♂2
+３|③|⑶|⒊|З|з|㈢♂3
+４|④|⑷|⒋|㈣♂4
+５|⑤|⑸|⒌|㈤♂5
+６|⑥|⑹|⒍|б|㈥♂6
+７|⑦|⑺|⒎|㈦♂7
+８|⑧|⑻|⒏|㈧♂8
+９|⑨|⑼|⒐|㈨♂9
+０♂0
+⑩|⑽|⒑♂10
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+(?i)[a-z0-9]+.(?i)(cn.cn)♂
+(?i)[a-z0-9]+.(?i)(net.cn)♂
+(?i)[a-z0-9]+.(?i)(org.cn)♂
+(?i)[a-z0-9]+.(?i)(cc)♂
+(?i)[a-z0-9]+.(?i)(gg)♂
+(?i)[a-z0-9]+。(?i)(or g)♂
+(?i)[a-z0-9]+。(?i)(Com)♂
+(?i)[a-z0-9]+。(?i)(cOM)♂
+(?i)[a-z0-9]+。(?i)(cn)♂
+(?i)[a-z0-9]+。(?i)(net)♂
+(?i)[a-z0-9]+。(?i)(org)♂
+(?i)[a-z0-9]+。(?i)(Com.cn)♂
+(?i)[a-z0-9]+。(?i)(cn.cn)♂
+(?i)[a-z0-9]+。(?i)(net.cn)♂
+(?i)[a-z0-9]+。(?i)(org.cn)♂
+(?i)[a-z0-9]+。(?i)(cc)♂
+(?i)[a-z0-9]+。(?i)(gg)♂
+&lt;br&gt;♂&lt;br /&gt;
+\&lt;!-- 作者有话说 --\&gt;
+\&lt;!-- 0116增加踩顶按钮 --\&gt;
+&lt;span.+?/span&gt;♂，
+&lt;!-.+?-&gt;
+&lt;/div&gt;
+&lt;[Ss][Cc][Rr][Ii][Pp][Tt](.|\n)+?&lt;/[Ss][Cc][Rr][Ii][Pp][Tt]&gt;|&lt;[Ff][Oo][Nn][Tt](.|\n)+?&lt;/[Ff][Oo][Nn][Tt]&gt;|&lt;[Ii][Ff][Rr][Aa][Mm][Ee](.|\n)+?&lt;/[Ii][Ff][Rr][Aa][Mm][Ee]&gt;|&lt;[Aa].+?&lt;/[Aa]&gt;|&lt;[Dd][Ii][Vv].*?&gt;|&lt;/[Dd][Ii][Vv]&gt;|&lt;!--.+?--&gt;
+&lt;div.+?&gt;
+&lt;/div&gt;
+更多到，地址
+wap.23us.com
+zn.88dushu.com
+www.88dushu.com
+88读书网
+八八读书网
+个人作品是.+?更多章节请到网址：
+&lt;a.+?&gt;
+&amp;nbsp;
+&lt;/a&gt;
+\^
+\~
+\*
+\(.+?\)
+小说无广告的
+顶点小说网
+www.26dd.Cn
+www.23wx.com
+頂點小說
+顶点小说
+www.23us.com
+23us.com
+顶点小说 ２３ＵＳ．ＣＯＭ更新最快</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div class="yd_text2"&gt;((.|\n)+?) &lt;/div&gt;\s*&lt;div class="yd_ad1"&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentPageUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPageUrl</RegexName>
+  </PubContentPageUrl>
+  <PubContentPageKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentPageKey</RegexName>
+  </PubContentPageKey>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentChapterName</RegexName>
+  </PubContentChapterName>
+  <PubContentChapterNum>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentChapterNum</RegexName>
+  </PubContentChapterNum>
+</RuleConfigInfo>

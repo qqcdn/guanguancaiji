@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>顶点资源网：http://www.23yuanma.net/forum.php</Pattern>
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>4562154</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>猫扑中文</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.mpzw.com</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.luoqiu.com/modules/article/search.php</Pattern>
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>?searchkey={SearchKey}&amp;searchtype=articlename</Pattern>
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>Singleline</Options>
+    <Pattern>&lt;b&gt;&lt;a href="http://www.luoqiu.com/book/\d*/(\d*).html" target="_blank"&gt;{SearchKey}&lt;/a&gt;</Pattern>
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.mpzw.com/book/toplastupdate/0/1.html</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;td class="odd"&gt;&lt;a href="http://www.mpzw.com/html/\d*/(\d*)/.+?&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.mpzw.com/modules/article/articleinfo.php?id={NovelKey}</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;title&gt;(.+?)最新章节</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>对不起，该文章不存在</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelAuthor>
+    <FilterPattern>&lt;a.+?&gt;|&lt;/a&gt;|&lt;strong&gt;|&lt;/strong&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>作&amp;nbsp;&amp;nbsp;&amp;nbsp; 者：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>类&amp;nbsp;&amp;nbsp;&amp;nbsp; 别：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>类&amp;nbsp;&amp;nbsp;&amp;nbsp; 别：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;br /&gt;&lt;br /&gt;|\s*&lt;/font&gt;&lt;br\s*/&gt;\s*|&lt;div class="block-left clearfix"&gt;.+?&lt;ul class="block-intro"&gt;|&lt;/div&gt;|&lt;/ul&gt;|&lt;br /&gt;|&amp;nbsp;|猫扑中文.+?VIP章节!|&amp;nbsp|&lt;/div&gt;|http://www.|：|&lt;/span&gt;|&lt;!--.+?--&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>Singleline</Options>
+    <Pattern>内容简介((.|\n)+?)&lt;!--结束--&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern>&lt;A href="http://www.shuoshuo520.com/Html/\d*/\d*/index.html" target=_blank&gt;|&lt;/A&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;title&gt;(.+?)最新章节</Pattern>
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern>已完成♂完结</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>文章状态：(.+?)&lt;/td&gt;</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>blank"&gt;&lt;img src="(.+?)"</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;ul class="ulrow"&gt;\s*&lt;li class="btnlink"&gt;&lt;a href="(.+?)"&gt;</Pattern>
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>{NovelPubKey}</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Spilt</Method>
+    <Options>None</Options>
+    <Pattern>th colspan="</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern>&lt;strong&gt;|&lt;/strong&gt;|....</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>4"&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern>&lt;!-.+?-&gt;|落秋|中文|正文|⑴更|⑵更|⑶更|（第六更）|（第五更）|（第四更）|（第三更）|（第二更）|（第一更）|【第一更】|【第二更】|【第三更】|【第四更】|【第五更】|【第六更】|【一更】|【二更】|【三更】|【四更】|【五更】|【六更】|（六更）|（五更）|（四更）|（三更）|（二更）|（一更）|（第\d*更）|都市特种兵王|万僵之祖|大画三国|全职真仙|都市悍刀行|_5201小说</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="\d*.h.+?&gt;(.+?)&lt;/a&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;a href="(\d*).h.+?"&gt;.+?&lt;/a&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>无法找到该页</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubContent_GetTextKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContent_GetTextKey</RegexName>
+  </PubContent_GetTextKey>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>http://www.mpzw.com|&lt;/div&gt;|&lt;DIV&gt;|&lt;div&gt;|落\s*秋\s*中\s*文\s*网|ww\s*com|bxzw|起点中文网|&lt;/DIV&gt;|net|cn|org|首发BXzw.com
+|&lt;!--.+?--&gt;|&lt;div.+?&gt;|回-味-书-库|回味书库|回\s*味\s*书\s*库|WWW.H.+?k.cOm|WwW.h.+?k.cOm|WWW.h.+?k.cOm|WwW.H.+?k.cOm
+[Ww]+\.[0-9a-zA-z]*\.[CcOoMm]
+[Ww]+\.[a-zA-z0-9]*\.[CcOoMm]
+[Ww]+\.[0-9]*\.[CcOoMm]
+[Ww]+\.[a-zA-z]*\.[CcOoMm]
+[Ww]+\.[0-9]*\.[nNeEtT]
+[Ww]+\.[a-zA-z]*\.[nNeEtT]
+泡\s*书\s*吧|泡-书_吧|泡_书_吧|泡-书-吧|泡_书-吧|泡&amp;书&amp;吧|WenXueMi.coM|小说阅读下载.+?快小说更多：http://om/|www.YZuU.CoM|看小说就到|诺书网|免费|叶 子|悠~悠|小说阅读下载尽在中文网更新超快小说更多：http://www..com/|泡*书*吧|www.paoShu8.com
+www.beijingaishu.com
+www.YZuU.CoM
+看小说就到
+叶 子·悠~悠
+&lt;/a&gt;
+&lt;hr /&gt;
+&lt;center&gt;
+&lt;p&gt;看书，就上
+&lt;/br&gt;
+看书，就上
+最快最全尽在猫扑中文网|om|百度搜索阅读最新最全的小说|http|更新最快更全的言情小说尽在|oM|&lt;/P&gt;|&lt;!--新礼物开始--&gt;.+?&lt;!--新礼物结束--&gt;|&lt;script.+?&gt;|&lt;/script&gt;|&lt;!--.+?阅读页简介页送礼END---&gt;|&lt;!--.+?---&gt;|BAIDU_CLB.+?&lt;/center&gt;|【网 Www.】|下载 楼|&lt;div(.|\n)+?(\s*猫\s*扑|中\s*文\s*)(.|\n)+?&amp;nbsp;|&lt;b&gt;.+?&lt;/b&gt;|&lt;p&gt;|&lt;/p&gt;|猫\s*扑\s*中\s*文|思\s*路\s*客|[0-9a-zA-z]*\.[CcOoMmUuSs]|\(凤舞文学网|://www.qiuwu.\)|\(l~1.+?l~1x\)|&lt;td&gt;&lt;table border='0' align='left'&gt;&lt;tr&gt;&lt;td&gt;</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div class="Content" id="content"&gt;\s*((.|\n)+?)\s*&lt;DIV align="center"&gt;|&lt;/TABLE&gt;((.|\n)+?)&lt;script language="javascript".+?&gt;&lt;/script&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentChapterName>
+  <PubContentImages>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;[^&lt;]*((?&lt;=&lt;(?:img|IMG)[^&gt;]*(?:(?:src|SRC)(?:\s*=\s*(?:["']?))))(?:[^\s"'&gt;]*)\.(?:jpg|gif|jpeg|bmp|png|GIF|JPG))[^&gt;]*&gt;</Pattern>
+    <RegexName>PubContentImages</RegexName>
+  </PubContentImages>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div.+?&gt;
+()
+http://..com</Pattern>
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentPageArea>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPageArea>
+  <PubContentPage>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName />
+  </PubContentPage>
+</RuleConfigInfo>

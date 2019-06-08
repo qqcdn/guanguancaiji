@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<HtmlConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Timing>true</Timing>
+  <Interval>1</Interval>
+  <PageMax>10</PageMax>
+  <PageTime>500</PageTime>
+  <ID />
+  <IndexUrl>http://localhost/index.php</IndexUrl>
+  <IndexPath>{WebSitePath}\index.html</IndexPath>
+  <PageUrl>http://localhost/modules/article/index.php?page={Page}</PageUrl>
+  <PagePath>{WebSitePath}\page\page_{Page}.html</PagePath>
+  <RadioBy>Index</RadioBy>
+  <IndexReplace />
+  <PageReplace>/modules/article/index\.php\?page=(\d*)♂/page/page_$1.html
+http://localhost/files/article/html/(\d*)/(\d*)/index.html♂/book/$1/$2/index.html</PageReplace>
+</HtmlConfigInfo>
